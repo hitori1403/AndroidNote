@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,8 +21,8 @@
         android:id="@+id/tv_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginBottom="5dp"
+        android:gravity="center"
         android:text="@string/example_gmail_com" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -47,6 +46,14 @@
         android:layout_marginTop="20dp"
         android:text="@string/save"
         android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/pb_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/violet"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/tv_logout"
